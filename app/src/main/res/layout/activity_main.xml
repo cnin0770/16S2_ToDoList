@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="comp5216.sydney.edu.au.todolist.MainActivity">
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtNewItem"
+            android:ems="10"
+            android:hint="New Item"
+            android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <requestFocus />
+    </EditText>
+
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtNewItem"
+            android:id="@+id/listView"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" >
+
+    </ListView>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:id="@+id/btnAddItem"
+            android:onClick="onAddItemClick" android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/listView" android:layout_alignEnd="@+id/listView"/>
+
+</RelativeLayout>
